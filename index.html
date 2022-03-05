@@ -3,86 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
+    <title>Random User</title>
     <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
-    <section class="menu">
-      <!-- title -->
-      <div class="title">
-        <h2>our menu</h2>
-        <div class="underline"></div>
+    <div class="block bcg-black"></div>
+    <div class="block">
+      <div class="container">
+        <img
+          src="https://randomuser.me/api/portraits/men/75.jpg"
+          alt="random user"
+          class="user-img"
+        />
+        <p class="user-title">My name is</p>
+        <p class="user-value">Pranav Singh</p>
+        <div class="values-list">
+          <!-- single icon -->
+          <button class="icon" data-label="name">
+            <span class="far fa-user"></span>
+          </button>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <button class="icon" data-label="email">
+            <span class="far fa-envelope-open"></span>
+          </button>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <button class="icon" data-label="age">
+            <span class="far fa-calendar-times"></span>
+          </button>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <button class="icon" data-label="street">
+            <span class="far fa-map"></span>
+          </button>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <button class="icon" data-label="phone">
+            <span class="fas fa-phone"></span>
+          </button>
+          <!-- end of single icon -->
+          <!-- single icon -->
+          <button class="icon" data-label="password">
+            <span class="fas fa-user-lock"></span>
+          </button>
+          <!-- end of single icon -->
+        </div>
+        <button class="btn" type="button">random user</button>
       </div>
-      <!-- filter buttons -->
-      <div class="btn-container">
-        <!-- <button type="button" class="filter-btn" data-id="all">all</button>
-        <button type="button" class="filter-btn" data-id="breakfast">
-          breakfast
-        </button>
-        <button type="button" class="filter-btn" data-id="lunch">lunch</button>
-        <button type="button" class="filter-btn" data-id="shakes">
-          shakes
-        </button> -->
-      </div>
-      <!-- menu items -->
-      <div class="section-center">
-        <!-- single item -->
-        <article class="menu-item">
-          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
-          <div class="item-info">
-            <header>
-              <h4>buttermilk pancakes</h4>
-              <h4 class="price">$15</h4>
-            </header>
-            <p class="item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
-              laboriosam excepturi! Quo, officia.
-            </p>
-          </div>
-        </article>
-        <!-- end of single item -->
-        <!-- single item -->
-        <article class="menu-item">
-          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
-          <div class="item-info">
-            <header>
-              <h4>buttermilk pancakes</h4>
-              <h4 class="price">$15</h4>
-            </header>
-            <p class="item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
-              laboriosam excepturi! Quo, officia.
-            </p>
-          </div>
-        </article>
-        <!-- end of single item -->
-        <!-- single item -->
-        <article class="menu-item">
-          <img src="./menu-item.jpeg" alt="menu item" class="photo" />
-          <div class="item-info">
-            <header>
-              <h4>buttermilk pancakes</h4>
-              <h4 class="price">$15</h4>
-            </header>
-            <p class="item-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
-              laboriosam excepturi! Quo, officia.
-            </p>
-          </div>
-        </article>
-        <!-- end of single item -->
-      </div>
-    </section>
-    <!-- javascript -->
-    <script src="app.js"></script>
+    </div>
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
